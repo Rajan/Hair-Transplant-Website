@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -9,36 +9,50 @@
 /* first */
 
 
-.first-page{
+.first-page {
     padding: 30px;
 }
 
-.row1{
+.row1 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.col-1-1{
+
+.col-1-1 {
     flex-basis: 40%;
     padding: 30px;
 }
-.col-1-1 form{
+
+.col-1-1 form {
     background-color: transparent;
 }
-.col-1-1 form input{
+
+.col-1-1 form input {
     border-radius: 5px;
 }
-.col-1-1 form button{
+.col-1-1 form input:hover {
+    transform: scale(1.1);
+}
+.col-1-1 form input{
+    transition: transform 0.4s;
+}
+
+
+.col-1-1 form button {
     border-radius: 5px;
     background-color: blue;
+    font-family: 'Play', sans-serif;
 }
-.col-1-2{
+
+.col-1-2 {
     flex-basis: 50%;
 }
 
-.col-1-2 img{
+.col-1-2 img {
     width: 100%;
-    border-radius: 0 20% 0 20% ;
+    border-radius: 0 20% 0 20%;
+    box-shadow: 0 0 35px rgb(31, 31, 255);
 }
 
 
@@ -58,14 +72,17 @@
 
 
 
-html{
-    scroll-behavior: smooth;      /*for go to perticular id by clicking on home tab or about tab or contact*/
+html {
+    scroll-behavior: smooth;
+    /*for go to perticular id by clicking on home tab or about tab or contact*/
 }
-body{
+
+body {
     background: #ffffff;
     color: #000000;
 }
-#header{
+
+#header {
     widows: 100%;
     height: 23vh;
     background-size: cover;
@@ -76,39 +93,46 @@ body{
     z-index: 10;
     box-shadow: 0 0 30px #8a8a8a;
 }
-.container nav{
+
+.container nav {
     position: sticky;
     top: 0;
     left: 0;
 }
-.container{
+
+.container {
     padding: 10px 5%;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
+
+.logo {
     width: 140px;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
-nav ul li a{
+
+nav ul li a {
     color: #000000;
     text-decoration: none;
     font-size: 16px;
     position: relative;
 }
-nav ul .btn{
-   margin-left: 20px;
+
+nav ul .btn {
+    margin-left: 20px;
 }
 
-nav ul li a::after{
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -118,17 +142,21 @@ nav ul li a::after{
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     width: 100%;
 }
-.header-text{
+
+.header-text {
     margin-top: 20%;
     font-size: 30px;
 }
-.header-text h1{
+
+.header-text h1 {
     font-size: 60px
 }
-.header-text h1 span{
+
+.header-text h1 span {
     color: #ff004f;
 }
 
@@ -140,51 +168,61 @@ nav ul li a:hover::after{
 
 /* About */
 
-.year{
+.year {
     padding-right: 20px;
     color: #1d25ff;
 }
-#about-2{
-    background: rgb(198, 201, 255);
+
+#about-2 {
+    background: rgb(222, 224, 254);
+    box-shadow: 10px 0 10px lightblue;
 }
 
-#about{
+#about {
     padding: 80px 0;
     color: #ababab;
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.about-col-1{
+
+.about-col-1 {
     flex-basis: 40%;
 }
-.about-col-1 img{
+
+.about-col-1 img {
     width: 100%;
-    border-radius: 0 20% 0 20% ;
+    border-radius: 0 20% 0 20%;
     box-shadow: 50px 50px lightblue;
 }
-.about-col-2{
+
+.about-col-2 {
     flex-basis: 50%;
 }
-.sub-title{
+
+.sub-title {
     font-size: 40px;
     font-weight: 600;
     color: #000000;
 }
-.blue-btn{
+
+.blue-btn {
     background-color: rgba(117, 144, 225, 0.5);
     border: none;
     padding: 10px 40px;
     margin: 0 0 30px 0;
     border-radius: 50px;
 }
-.tab-titles{
+
+.tab-titles {
     display: flex;
     margin: 20px 0 40px;
 }
-.tab-links{
+
+.tab-links {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
@@ -192,7 +230,8 @@ nav ul li a:hover::after{
     position: relative;
     transition: color 0.3s;
 }
-.tab-links::after{
+
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
@@ -202,24 +241,30 @@ nav ul li a:hover::after{
     bottom: -8px;
     transition: 0.5s;
 }
-.tab-links.active-link::after{
+
+.tab-links.active-link::after {
     width: 50%;
 }
-.tab-links:hover{
+
+.tab-links:hover {
     color: rgb(54, 54, 54);
 }
-.tab-contents ul li{
+
+.tab-contents ul li {
     list-style: none;
     margin: 10px 0;
 }
-.tab-contents ul li span{
+
+.tab-contents ul li span {
     color: #b54769;
     font-size: 14px;
 }
-.tab-contents{
+
+.tab-contents {
     display: none;
 }
-.tab-contents.active-tab{
+
+.tab-contents.active-tab {
     display: block;
 }
 
@@ -229,17 +274,20 @@ nav ul li a:hover::after{
 /* Services */
 
 
-#services{
+#services {
     padding: 50px 0;
     background: lightblue;
+    box-shadow: 0 0 30px inset rgb(219, 180, 255);
 }
-.services-list{
+
+.services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.services-list div{
+
+.services-list div {
     background: rgb(255, 255, 255);
     padding: 40px;
     font-size: 13px;
@@ -248,23 +296,27 @@ nav ul li a:hover::after{
     transition: background 0.5s, transform 0.5s;
     box-shadow: 0 0 30px #8a8a8a;
 }
-.services-list div i{
+
+.services-list div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
-.services-list div h2{
+
+.services-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.services-list div a{
+
+.services-list div a {
     text-decoration: none;
     color: #000000;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
-.services-list div:hover{
+
+.services-list div:hover {
     background: #1d25ff;
     transform: translateY(-10px);
     color: white;
@@ -276,17 +328,18 @@ nav ul li a:hover::after{
 
 
 
-.booking{
+.booking {
     background: lightblue;
 }
 
-.dash{
+.dash {
     margin-top: 100px;
     border: 3px solid blue;
     border-radius: 3px;
     width: 50px;
 }
-#rectangle{
+
+#rectangle {
     background-color: rgba(117, 144, 225, 0.5);
     border: none;
     padding: 15px 40px;
@@ -299,49 +352,56 @@ nav ul li a:hover::after{
 
 
 
-.booking-col-1{
+.booking-col-1 {
     flex-basis: 40%;
     color: #000000;
     padding-top: 100px;
 }
-.booking-col-1{
+
+.booking-col-1 {
     margin-bottom: 30px;
 }
-.booking-col-1{
+
+.booking-col-1 {
     flex-basis: 40%;
 }
-.booking-col-1 img{
+
+.booking-col-1 img {
     width: 100%;
-    border-radius: 0 20% 0 20% ;
+    border-radius: 0 20% 0 20%;
 }
 
 
 
-.booking-list{
+.booking-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
     color: black;
 }
-.booking-list div{
+
+.booking-list div {
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
-    box-shadow: 0 0 30px #8a8a8a;
+    /* box-shadow: 0 0 30px #8a8a8a; */
 }
-.booking-list div i{
+
+.booking-list div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
-.booking-list div h2{
+
+.booking-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.booking-list div a{
+
+.booking-list div a {
     text-decoration: none;
     color: #fff;
     font-size: 12px;
@@ -354,15 +414,19 @@ nav ul li a:hover::after{
 
 /* contact */
 
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
-.contact-container{
+
+.contact-container {
     width: 100%;
     height: 100vh;
     background: linear-gradient(to bottom, rgb(231, 249, 255), rgb(80, 80, 255));
@@ -370,7 +434,8 @@ nav ul li a:hover::after{
     align-items: center;
     justify-content: center;
 }
-form{
+
+form {
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -379,12 +444,15 @@ form{
     max-width: 600px;
     border-radius: 0 20% 0 20%;
 }
-form h3{
+
+form h3 {
     color: #0006b5;
     font-weight: 500;
     margin-bottom: 20px;
 }
-form input, form textarea{
+
+form input,
+form textarea {
     border: 0;
     margin: 10px 0;
     padding: 20px;
@@ -392,9 +460,11 @@ form input, form textarea{
     background: #f5f5f5;
     font-size: 16px;
     border-radius: 5px;
+    font-family: 'Fredoka One', cursive;
     /* color: #ff5361; */
 }
-form button{
+
+form button {
     border-radius: 5px;
     background-color: blue;
     padding: 15px;
@@ -406,6 +476,7 @@ form button{
     width: 60%;
     margin: 20px auto 0;
     font-size: 13px;
+    font-family: 'Play', sans-serif;
 }
 
 
@@ -416,31 +487,36 @@ form button{
 
 
 /* CSS for small screen */
-nav .fa-solid{
+nav .fa-solid {
     display: none;
 }
 
 
 
-@media only screen and (max-width: 820px){
-    .col-1-1{
+@media only screen and (max-width: 820px) {
+    .col-1-1 {
         flex-basis: 100%;
     }
-    .col-1-2{
+
+    .col-1-2 {
         flex-basis: 100%;
     }
-    .header-text{
+
+    .header-text {
         margin-top: 525px;
         font-size: 16px;
     }
-    .header-text h1{
+
+    .header-text h1 {
         font-size: 30px
     }
-    nav .fa-solid{
+
+    nav .fa-solid {
         display: block;
         font-size: 25px;
     }
-    nav ul{
+
+    nav ul {
         background-color: aliceblue;
         position: fixed;
         top: 0;
@@ -451,54 +527,145 @@ nav .fa-solid{
         z-index: 2;
         transition: right 0.5s;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 25px;
     }
-    nav ul .fa-solid{
+
+    nav ul .fa-solid {
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
-    .about-col-1, .about-col-2{
+
+    .about-col-1,
+    .about-col-2 {
         flex-basis: 100%;
     }
-    .about-col-1{
+
+    .about-col-1 {
         margin-bottom: 30px;
     }
-    .about-col-2{
+
+    .about-col-2 {
         font-size: 14px;
     }
-    .tab-links{
+
+    .tab-links {
         font-size: 16px;
         margin-right: 20px;
     }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+
+    nav ul button {
+        position: relative;
+        left: 5px;
+        /* bottom: px; */
+    }
+
+    .booking-col-1 {
+        flex-basis: 100%;
+    }
+    
+
+
+}
+
+
+#con-logo i {
+    font-size: 25px;
+    margin-right: 7px;
+    transition: transform 0.5s;
+}
+
+#con-logo i:hover {
+    transform: translateY(-5px);
+}
+
+
+
+
+
+
+
+
+/* Contact */
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #001eff;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.btn.btn-2{
+    display: inline-block;
+    background: #0000ff;
+    transition: transform 0.4s;
+    border: none;
+    color: white;
+}
+.btn.btn-2:hover{
+    transform: scale(1.03);
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 6px;
+}
+form .btn-2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #91cfff;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #ff0000;
+}
+
+
+@media only screen and (max-width: 820px) {
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
     .copyright{
         font-size: 14px;
     }
-    nav ul button{
-        position: relative;
-        left: 5px;
-        /* bottom: px; */
-    }
 
-    .booking-col-1{
-        flex-basis: 100%;
-    }
-
-    
 }
 
 
-#con-logo i{
-    font-size: 25px;
-    margin-right: 7px;
-    transition: transform 0.5s;
-}
-#con-logo i:hover{
-    transform: translateY(-5px);
-}
