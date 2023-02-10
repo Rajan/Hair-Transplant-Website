@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* first */
+
+
+.first-page{
+    padding: 30px;
+}
+
+.row1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col-1-1{
+    flex-basis: 40%;
+    padding: 30px;
+}
+.col-1-1 form{
+    background-color: transparent;
+}
+.col-1-1 form input{
+    border-radius: 5px;
+}
+.col-1-1 form button{
+    border-radius: 5px;
+    background-color: blue;
+}
+.col-1-2{
+    flex-basis: 50%;
+}
+
+.col-1-2 img{
+    width: 100%;
+    border-radius: 0 20% 0 20% ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html{
+    scroll-behavior: smooth;      /*for go to perticular id by clicking on home tab or about tab or contact*/
+}
+body{
+    background: #ffffff;
+    color: #000000;
+}
+#header{
+    widows: 100%;
+    height: 23vh;
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 0 30px #8a8a8a;
+}
+.container nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.container{
+    padding: 10px 5%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+nav ul .btn{
+   margin-left: 20px;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(180, 220, 255);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+
+
+
+
+
+
+
+/* About */
+
+.year{
+    padding-right: 20px;
+    color: #1d25ff;
+}
+#about-2{
+    background: rgb(198, 201, 255);
+}
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 40%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 0 20% 0 20% ;
+    box-shadow: 50px 50px lightblue;
+}
+.about-col-2{
+    flex-basis: 50%;
+}
+.sub-title{
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+}
+.blue-btn{
+    background-color: rgba(117, 144, 225, 0.5);
+    border: none;
+    padding: 10px 40px;
+    margin: 0 0 30px 0;
+    border-radius: 50px;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-links:hover{
+    color: rgb(54, 54, 54);
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+
+
+/* Services */
+
+
+#services{
+    padding: 50px 0;
+    background: lightblue;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 0 0 30px #8a8a8a;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #1d25ff;
+    transform: translateY(-10px);
+    color: white;
+}
+
+
+/* Booking */
+
+
+
+
+.booking{
+    background: lightblue;
+}
+
+.dash{
+    margin-top: 100px;
+    border: 3px solid blue;
+    border-radius: 3px;
+    width: 50px;
+}
+#rectangle{
+    background-color: rgba(117, 144, 225, 0.5);
+    border: none;
+    padding: 15px 40px;
+    margin: 50px 0 30px 0;
+    border-radius: none;
+
+}
+
+
+
+
+
+.booking-col-1{
+    flex-basis: 40%;
+    color: #000000;
+    padding-top: 100px;
+}
+.booking-col-1{
+    margin-bottom: 30px;
+}
+.booking-col-1{
+    flex-basis: 40%;
+}
+.booking-col-1 img{
+    width: 100%;
+    border-radius: 0 20% 0 20% ;
+}
+
+
+
+.booking-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    color: black;
+}
+.booking-list div{
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 0 0 30px #8a8a8a;
+}
+.booking-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.booking-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.booking-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+
+
+/* contact */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.contact-container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(231, 249, 255), rgb(80, 80, 255));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 0 20% 0 20%;
+}
+form h3{
+    color: #0006b5;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+    border-radius: 5px;
+    /* color: #ff5361; */
+}
+form button{
+    border-radius: 5px;
+    background-color: blue;
+    padding: 15px;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 60%;
+    margin: 20px auto 0;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+/* CSS for small screen */
+nav .fa-solid{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 820px){
+    .col-1-1{
+        flex-basis: 100%;
+    }
+    .col-1-2{
+        flex-basis: 100%;
+    }
+    .header-text{
+        margin-top: 525px;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background-color: aliceblue;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+    nav ul button{
+        position: relative;
+        left: 5px;
+        /* bottom: px; */
+    }
+
+    .booking-col-1{
+        flex-basis: 100%;
+    }
+
+    
+}
+
+
+#con-logo i{
+    font-size: 25px;
+    margin-right: 7px;
+    transition: transform 0.5s;
+}
+#con-logo i:hover{
+    transform: translateY(-5px);
+}
