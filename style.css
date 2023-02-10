@@ -540,6 +540,12 @@ nav .fa-solid {
         left: 25px;
         cursor: pointer;
     }
+    nav i{
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        cursor: pointer;
+    }
 
     .about-col-1,
     .about-col-2 {
