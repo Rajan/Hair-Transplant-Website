@@ -15,7 +15,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="img11/logo.png" alt="logo" class="logo">
+                <img src="https://www.vaisalon.co.nz/wp-content/uploads/2021/07/logo-1024x299.png" alt="logo" class="logo">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About Us</a></li>
@@ -49,7 +49,7 @@
                     </p>
                     <form>
                         <input type="email" placeholder="Your Mail Address">
-                        <button class="first-button">Send</button>
+                        <button class="first-button">SEND</button>
                     </form>
                 </div>
                 <div class="col-1-2">
@@ -81,7 +81,7 @@
             <p>For those seeking the best services in hair transplant treatement. <br> We can provide our customer with life-changing solutions.</p>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-message"></i>
+                    <i class="fa-solid fa-message text-warning"></i>
                     <h2>customer Service</h2>
                     <p>
                         We take customer service very seriously. Our relationship with our patients doea not ends once the sergery is finished.
@@ -89,7 +89,7 @@
                     <a href="#">Learn More</a>
                 </div>
                 <div>
-                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-envelope text-danger"></i>
                     <h2>Free Consultation</h2>
                     <p>
                         Simply fill out the form for free Consultation report. Alternatively, book your free Consultation today and visit us in our office.
@@ -97,7 +97,7 @@
                     <a href="#">Learn More</a>
                 </div>
                 <div>
-                    <i class="fa-solid fa-id-badge"></i>
+                    <i class="fa-solid fa-id-badge text-info"></i>
                     <h2>Exceptional Doctors</h2>
                     <p>
                         Our doctors have 20+ years of experience in hair transplant field. Doctors are respected member of ISHRS.
@@ -130,28 +130,28 @@
                     <div class="about-col-2 ">
                         <div class="booking-list">
                             <div>
-                                <i class="fa-regular fa-file"></i>
+                                <i class="fa-regular fa-file text-info"></i>
                                 <h2>Receive Consultation Report</h2>
                                 <p>
                                     Once our doctors have assessed your suitability they will send you a report outlining their suggestions.
                                 </p>
                             </div>
                             <div>
-                                <i class="fa-solid fa-calendar-days"></i>
+                                <i class="fa-solid fa-calendar-days text-danger"></i>
                                 <h2>Decide On Surgery Date</h2>
                                 <p>
                                     Once your receive the report and you are satisfied with its content, you can select a suitable date for the treatement.
                                 </p>
                             </div>
                             <div>
-                                <i class="fa-solid fa-car"></i>
+                                <i class="fa-solid fa-car text-secondary"></i>
                                 <h2>Reach and Get Surgery</h2>
                                 <p>
                                     You need to arrive in office the day before the surgery. our driver will pick you from the your location.
                                 </p>
                             </div>
                             <div>
-                                <i class="fa-solid fa-droplet"></i>
+                                <i class="fa-solid fa-droplet text-success"></i>
                                 <h2>Post Surgery Care Constant</h2>
                                 <p>
                                     The day after the hair transplant surgery we will bring you back to our hospital for a post operative check up.
@@ -175,7 +175,7 @@
                     <img src="https://media.istockphoto.com/id/1272522468/photo/medical-concept-of-indian-beautiful-female-doctor-in-white-coat-with-stethoscope.jpg?s=170667a&w=0&k=20&c=AC05t3pl4XUlXnarbe04fgayaKRXlJ4peASZ5rWGXx4="  alt="user">
                 </div>
                 <div class="about-col-2 my-5">
-                    <button class="blue-btn btn-primary">DOCTOR</button>
+                    <button class="blue-btn btn-primary bg-success text-light">DOCTOR</button>
                     <h1 class="sub-title">Dr. Elizabeth Oguzoglu</h1>
                     <p class="my-3">
                         Born in 1992, Hair Sergeon Dr. Elizabeth Oguzoglu performing hair transplant operations since 2015.
@@ -202,7 +202,7 @@
                     <img src="https://www.pngitem.com/pimgs/m/455-4554869_doctor-with-stethoscope-png-png-download-doctor-images.png"  alt="user">
                 </div>
                 <div class="about-col-2 my-5">
-                    <button class="blue-btn btn-primary">DOCTOR</button>
+                    <button class="blue-btn btn-primary bg-success text-light">DOCTOR</button>
                     <h1 class="sub-title">Dr. Shaun Apaydin</h1>
                     <p class="my-3">
                         Born in 1985, Plastic & Reconstruction Surgeon Dr. Shaun Apaydin is performing both FUT and FUE methods since 1998.
@@ -225,19 +225,32 @@
 
     <!-- Contact -->
 
-    <div class="contact-container">
-        <form>
-            <h3>Get a free Consultation</h3>
-            <p>We offer you a totally free of charge and absolutly non-binding free hair transplant Consultation, directly from our doctors.</p>
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Email Id" required>
-            <input type="text" id="phone" placeholder="Phone No." required>
-            <input type="text" placeholder="Select Your Doctor">
-            <button type="submit" class="submit-button">REQUEST CONSULTATION</button>
-        </form>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left my-5">
+                    <h1 class="sub-title">Get a free Consultation</h1>
+                    <p class="text-secondary">We offer you a totally free of charge and absolutly non-binding free hair transplant Consultation, directly from our doctors.</p>
+                    <p id="con-logo"><i class="fa-solid fa-envelope"></i>contact@example.com</p>
+                    <p id="con-logo"><i class="fa-solid fa-phone"></i>9876543210</p>
+                    
+                   
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="phone" placeholder="Phone Number" required>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 <i class="fa-solid fa-heart"></i> Made by Practice </p>
+        </div>
     </div>
-
-
 
 
 
