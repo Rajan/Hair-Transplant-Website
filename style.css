@@ -52,7 +52,7 @@
 .col-1-2 img {
     width: 100%;
     border-radius: 0 20% 0 20%;
-    box-shadow: 0 0 35px rgb(31, 31, 255);
+    box-shadow: 0 0 35px rgb(79, 79, 255);
 }
 
 
@@ -649,7 +649,7 @@ form .btn-2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #91cfff;
+    background: linear-gradient(to right, lightblue, rgb(58, 58, 255));
     font-weight: 300;
     margin-top: 20px;
 }
