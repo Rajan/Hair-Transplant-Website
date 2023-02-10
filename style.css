@@ -542,8 +542,8 @@ nav .fa-solid {
     }
     nav i{
         position: absolute;
-        top: 15px;
-        right: 25px;
+        top: 1rem;
+        right: 1.5rem;
         cursor: pointer;
     }
 
